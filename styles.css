@@ -1,0 +1,135 @@
+:root {
+    --primary: #2e4756;
+    --secondary: #5c8d89;
+    --accent: #ffd700;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--primary);
+}
+
+.hero {
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 4rem 0;
+}
+
+.features-icon {
+    width: 64px;
+    height: 64px;
+    fill: var(--secondary);
+}
+
+.calculator {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.security-badge {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.display-4.text-primary {
+    color: var(--secondary) !important;
+    font-weight: 600;
+}
+
+#investModal .card {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+#investModal .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#investModal .modal-header {
+    border-bottom: 3px solid var(--accent);
+}
+
+.testimonial-carousel {
+    position: relative;
+    padding: 20px 40px;
+}
+
+.testimonial-carousel .carousel-control-prev,
+.testimonial-carousel .carousel-control-next {
+    width: 40px;
+    color: var(--primary);
+    opacity: 1;
+}
+
+.testimonial-carousel .carousel-control-prev-icon,
+.testimonial-carousel .carousel-control-next-icon {
+    background-color: var(--primary);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.testimonial-carousel .carousel-indicators {
+    bottom: -40px;
+}
+
+.testimonial-carousel .carousel-indicators button {
+    background-color: var(--primary);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--accent) !important;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--accent);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-link::after {
+        display: none;
+    }
+}
