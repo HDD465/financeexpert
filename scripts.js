@@ -240,7 +240,7 @@ function openWhatsAppContact() {
 // Investment contact handling
 function handleInvestmentContact(projectTitle, amount) {
     // WhatsApp configuration
-    const phoneNumber = "+33123456789"; // Replace with actual WhatsApp business number
+    const phoneNumber = "+22945510322"; // Replace with actual WhatsApp business number
     const projectInfo = encodeURIComponent(`Je suis intéressé(e) par le projet: ${projectTitle}\nMontant de l'investissement: ${amount}€`);
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${projectInfo}`;
 
